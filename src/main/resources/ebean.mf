@@ -1,4 +1,4 @@
-entity-packages: com.photoflow.pf2.jpa
-transactional-packages: com.photoflow.pf2
-querybean-packages: com.photoflow.pf2
+entity-packages: com.eliaharm.photoflow.jpa
+transactional-packages: com.eliaharm.photoflow
+querybean-packages: com.eliaharm.photoflow
 

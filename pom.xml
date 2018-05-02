@@ -8,16 +8,16 @@
 	<artifactId>photoflow</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>mavenprojectfx1</name>
+	<name>PhotoFlow</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<mainClass>com.mycompany.mavenprojectfx1.MainApp</mainClass>
+		<mainClass>com.eliaharm.photoflow.MainApp</mainClass>
 	</properties>
 
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
-		<name>Your Organisation</name>
+		<name>Elia Harmouche</name>
 	</organization>
 
 	<build>
@@ -118,6 +118,28 @@
 					</tiles>
 				</configuration>
 			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.eliaharm.photoflow.MainApp</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance merges -->
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -183,7 +205,56 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>1.2.3</version>
-			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+
+		<!-- still under test -->
+		<dependency>
+			<groupId>org.controlsfx</groupId>
+			<artifactId>controlsfx</artifactId>
+			<version>8.40.14</version>
+		</dependency>
+		<!-- material design <dependency> <groupId>com.jfoenix</groupId> <artifactId>jfoenix</artifactId> 
+			<version>8.0.3</version> </dependency> -->
+
+		<!-- Java ffmpeg command-line wrapper -->
+		<dependency>
+			<groupId>com.github.kokorin.jaffree</groupId>
+			<artifactId>jaffree</artifactId>
+			<version>0.5.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.github.mjeanroy/exiftool-lib -->
+		<dependency>
+			<groupId>com.github.mjeanroy</groupId>
+			<artifactId>exiftool-lib</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.bramp.ffmpeg</groupId>
+			<artifactId>ffmpeg</artifactId>
+			<version>0.6.2</version>
+		</dependency>
+
+		<!-- encryption -->
+		<dependency>
+			<groupId>org.jasypt</groupId>
+			<artifactId>jasypt</artifactId>
+			<version>1.9.2</version>
+			<classifier>lite</classifier>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.20</version>
+			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>

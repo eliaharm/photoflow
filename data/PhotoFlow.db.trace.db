@@ -1,0 +1,3 @@
+2018-05-02 21:24:04 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "TBL_IMPORTED_FILES" not found; SQL statement:
+select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0 where t0.id = ?   [42102-197]
