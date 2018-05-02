@@ -29,7 +29,7 @@ public class FXMLController implements Initializable {
         	System.out.println(ProgramDirectoryUtilities.getProgramDirectory());
         	System.out.println(System.getProperty("user.dir"));
             System.out.println(this.getClass().getProtectionDomain().getCodeSource().getLocation());
-			MTPUtil.addLibraryPath(System.getProperty("user.dir")+"\\target\\");
+			MTPUtil.addLibraryPath(System.getProperty("user.dir")+"\\target\\classes\\");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

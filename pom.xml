@@ -103,21 +103,21 @@
 					</additionalClasspathElements>
 				</configuration>
 			</plugin>
-			
-            <!-- elia added -->
-         
-            <plugin>
-                <groupId>io.repaint.maven</groupId>
-                <artifactId>tiles-maven-plugin</artifactId>
-                <version>2.11</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <tiles>
-                        <tile>org.avaje.tile:java-compile:1.1</tile>
-                        <tile>io.ebean.tile:enhancement:5.5</tile>
-                    </tiles>
-                </configuration>
-            </plugin>
+
+			<!-- elia added -->
+
+			<plugin>
+				<groupId>io.repaint.maven</groupId>
+				<artifactId>tiles-maven-plugin</artifactId>
+				<version>2.11</version>
+				<extensions>true</extensions>
+				<configuration>
+					<tiles>
+						<tile>org.avaje.tile:java-compile:1.1</tile>
+						<tile>io.ebean.tile:enhancement:5.5</tile>
+					</tiles>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -130,65 +130,61 @@
 			<systemPath>${project.basedir}/lib/jmtp.jar</systemPath>
 		</dependency>
 
-        <!-- encryption -->
-        <dependency>
-            <groupId>org.jasypt</groupId>
-            <artifactId>jasypt</artifactId>
-            <version>1.9.2</version>
-            <classifier>lite</classifier>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.4.197</version>
-            <!--<scope>test</scope> -->
-        </dependency>
-        
-        <!-- for ebean -->
-        <!-- https://mvnrepository.com/artifact/io.ebean/ebean -->
-        <dependency>
-            <groupId>io.ebean</groupId>
-            <artifactId>ebean</artifactId>
-            <version>11.15.4</version>
-        </dependency>
+		<!-- encryption -->
+		<dependency>
+			<groupId>org.jasypt</groupId>
+			<artifactId>jasypt</artifactId>
+			<version>1.9.2</version>
+			<classifier>lite</classifier>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.197</version>
+			<!--<scope>test</scope> -->
+		</dependency>
 
-        <!-- support for query beans -->
-        <dependency>
-            <groupId>io.ebean</groupId>
-            <artifactId>ebean-querybean</artifactId>
-            <version>11.2.1</version>
-        </dependency>
+		<!-- for ebean -->
+		<!-- https://mvnrepository.com/artifact/io.ebean/ebean -->
+		<dependency>
+			<groupId>io.ebean</groupId>
+			<artifactId>ebean</artifactId>
+			<version>11.15.4</version>
+		</dependency>
 
-        <!-- java annotation processor to generate query beans -->
-        <dependency>
-            <groupId>io.ebean</groupId>
-            <artifactId>querybean-generator</artifactId>
-            <version>11.1.2</version>
-            <scope>provided</scope>
-        </dependency>
+		<!-- support for query beans -->
+		<dependency>
+			<groupId>io.ebean</groupId>
+			<artifactId>ebean-querybean</artifactId>
+			<version>11.2.1</version>
+		</dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.ebean.tile/enhancement -->
-        <!--
-        <dependency>
-            <groupId>io.ebean.tile</groupId>
-            <artifactId>enhancement</artifactId>
-            <version>5.5</version>
-        </dependency>
-        -->
-        <!--
-        Optional but Ebean will read these annotations
-        like @size to determine column lengths etc
-        -->
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>1.0.0.GA</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
-        </dependency>
+		<!-- java annotation processor to generate query beans -->
+		<dependency>
+			<groupId>io.ebean</groupId>
+			<artifactId>querybean-generator</artifactId>
+			<version>11.1.2</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.ebean.tile/enhancement -->
+		<!-- <dependency> <groupId>io.ebean.tile</groupId> <artifactId>enhancement</artifactId> 
+			<version>5.5</version> </dependency> -->
+		<!-- Optional but Ebean will read these annotations like @size to determine 
+			column lengths etc -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.3</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 </project>

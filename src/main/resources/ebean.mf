@@ -1,0 +1,4 @@
+entity-packages: com.photoflow.pf2.jpa
+transactional-packages: com.photoflow.pf2
+querybean-packages: com.photoflow.pf2
+

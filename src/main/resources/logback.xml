@@ -1,0 +1,34 @@
+<configuration scan="true" scanPeriod="3 seconds">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+ <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+     <file>logs/PhotoFlow.log</file>
+     <encoder>
+       <pattern>%date [%level] from %logger in %thread - %message%n%xException</pattern>
+     </encoder>
+  </appender>
+  
+  <appender name="ASYNCFILE" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="FILE" />
+  </appender>
+  
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <!-- Logging for SQL etc -->
+
+    <logger name="io.ebean.SQL" level="TRACE"/>
+    <logger name="io.ebean.TXN" level="TRACE"/>
+    <logger name="io.ebean.SUM" level="TRACE"/>
+    <logger name="io.ebean.DDL" level="TRACE"/>
+
+    <logger name="org.avaje.docker" level="DEBUG"/>
+
+</configuration>
