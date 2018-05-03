@@ -44,3 +44,24 @@
 2018-05-02 21:34:38,832 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1002] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0; --bind()
 2018-05-02 21:34:38,833 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1002] FindMany type[Imported_files] origin[DECtuo.A.A] exeMicros[381] rows[2] predicates[] bind[]
 2018-05-02 21:34:38,833 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - java.util.ArrayList$Itr@1408c794
+2018-05-03 10:11:15,331 [INFO] from io.ebean.EbeanVersion in JavaFX Application Thread - ebean version: 11.15.4
+2018-05-03 10:11:15,725 [INFO] from io.ebean.config.properties.LoadContext in JavaFX Application Thread - loaded properties from [ebean.properties]
+2018-05-03 10:11:16,271 [INFO] from org.avaje.datasource.pool.ConnectionPool in JavaFX Application Thread - DataSourcePool [db] autoCommit[false] transIsolation[READ_COMMITTED] min[2] max[200]
+2018-05-03 10:11:17,920 [INFO] from io.ebean.internal.DefaultContainer in JavaFX Application Thread - DatabasePlatform name:db platform:h2
+2018-05-03 10:15:46,917 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - Entering application: handleButton2Action DB
+2018-05-03 10:15:47,314 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1001] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0 where t0.id = ?  ; --bind(1, )
+2018-05-03 10:15:47,329 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1001] FindBean type[Imported_files] origin[DECtun.A.A] exeMicros[135156] rows[1] bind[1, ]
+2018-05-03 10:15:47,343 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - c:\eeeeee
+2018-05-03 10:15:47,343 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - com.eliaharm.photoflow.jpa.Imported_files@1
+2018-05-03 10:15:47,414 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1002] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0; --bind()
+2018-05-03 10:15:47,415 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1002] FindMany type[Imported_files] origin[DECtuo.A.A] exeMicros[1113] rows[2] predicates[] bind[]
+2018-05-03 10:15:47,415 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - java.util.ArrayList$Itr@7a2a1a0
+2018-05-03 10:15:49,085 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - Entering application: handleButtonAction
+2018-05-03 10:16:12,611 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - Entering application: handleButton2Action DB
+2018-05-03 10:16:12,612 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1003] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0 where t0.id = ?  ; --bind(1, )
+2018-05-03 10:16:12,613 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1003] FindBean type[Imported_files] origin[DECtun.A.A] exeMicros[492] rows[1] bind[1, ]
+2018-05-03 10:16:12,613 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - c:\eeeeee
+2018-05-03 10:16:12,613 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - com.eliaharm.photoflow.jpa.Imported_files@1
+2018-05-03 10:16:12,613 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1004] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0; --bind()
+2018-05-03 10:16:12,613 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1004] FindMany type[Imported_files] origin[DECtuo.A.A] exeMicros[260] rows[2] predicates[] bind[]
+2018-05-03 10:16:12,613 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - java.util.ArrayList$Itr@5b394647
