@@ -65,3 +65,15 @@
 2018-05-03 10:16:12,613 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1004] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0; --bind()
 2018-05-03 10:16:12,613 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1004] FindMany type[Imported_files] origin[DECtuo.A.A] exeMicros[260] rows[2] predicates[] bind[]
 2018-05-03 10:16:12,613 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - java.util.ArrayList$Itr@5b394647
+2018-05-03 19:26:52,869 [INFO] from io.ebean.EbeanVersion in JavaFX Application Thread - ebean version: 11.15.4
+2018-05-03 19:26:52,918 [INFO] from io.ebean.config.properties.LoadContext in JavaFX Application Thread - loaded properties from [ebean.properties]
+2018-05-03 19:26:53,016 [INFO] from org.avaje.datasource.pool.ConnectionPool in JavaFX Application Thread - DataSourcePool [db] autoCommit[false] transIsolation[READ_COMMITTED] min[2] max[200]
+2018-05-03 19:26:58,196 [INFO] from io.ebean.internal.DefaultContainer in JavaFX Application Thread - DatabasePlatform name:db platform:h2
+2018-05-03 19:27:00,499 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - Entering application: handleButton2Action DB
+2018-05-03 19:27:00,545 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1001] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0 where t0.id = ?  ; --bind(1, )
+2018-05-03 19:27:00,548 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1001] FindBean type[Imported_files] origin[DECtun.A.A] exeMicros[13828] rows[1] bind[1, ]
+2018-05-03 19:27:00,549 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - c:\eeeeee
+2018-05-03 19:27:00,549 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - Imported_files(id=1, job_id=1, file_name_path=c:\eeeeee)
+2018-05-03 19:27:00,553 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1002] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0; --bind()
+2018-05-03 19:27:00,553 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1002] FindMany type[Imported_files] origin[DECtuo.A.A] exeMicros[350] rows[2] predicates[] bind[]
+2018-05-03 19:27:00,553 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - java.util.ArrayList$Itr@6a1ae70

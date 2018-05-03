@@ -8,13 +8,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 //import lombok.ToString;
 
+import lombok.Data;
+
 /**
  * @author elia_harmouche
  */
 //@ToString
 @Entity
 @Table(name = "tbl_imported_files")
-public class Imported_files {
+public @Data class Imported_files {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
