@@ -1,0 +1,16 @@
+
+
+
+Resize DSLR
+
+image magic
+
+
+convert BackPack.png -filter Lanczos -define filter:lobes=4 -define filter:blur=0.88451002338585141 -resize 1200x1200 Lanczos_4.png
+
+http://www.imagemagick.org/discourse-server/viewtopic.php?t=20992&p=85257#p85257
+
+http://www.imagemagick.org/Usage/resize/#cyl_interpolated
+
+
+

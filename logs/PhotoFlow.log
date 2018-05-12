@@ -77,3 +77,11 @@
 2018-05-03 19:27:00,553 [DEBUG] from io.ebean.SQL in JavaFX Application Thread - txn[1002] select t0.id, t0.job_id, t0.file_name_path from tbl_imported_files t0; --bind()
 2018-05-03 19:27:00,553 [DEBUG] from io.ebean.SUM in JavaFX Application Thread - txn[1002] FindMany type[Imported_files] origin[DECtuo.A.A] exeMicros[350] rows[2] predicates[] bind[]
 2018-05-03 19:27:00,553 [INFO] from com.eliaharm.photoflow.MainApp in JavaFX Application Thread - java.util.ArrayList$Itr@6a1ae70
+2018-05-05 16:48:56,769 [INFO] from io.ebean.EbeanVersion in JavaFX Application Thread - ebean version: 11.15.4
+2018-05-05 16:48:56,876 [INFO] from io.ebean.config.properties.LoadContext in JavaFX Application Thread - loaded properties from [ebean.properties]
+2018-05-05 16:48:57,007 [INFO] from org.avaje.datasource.pool.ConnectionPool in JavaFX Application Thread - DataSourcePool [db] autoCommit[false] transIsolation[READ_COMMITTED] min[2] max[200]
+2018-05-05 16:49:02,191 [INFO] from io.ebean.internal.DefaultContainer in JavaFX Application Thread - DatabasePlatform name:db platform:h2
+2018-05-05 16:50:28,416 [INFO] from io.ebean.EbeanVersion in JavaFX Application Thread - ebean version: 11.15.4
+2018-05-05 16:50:28,454 [INFO] from io.ebean.config.properties.LoadContext in JavaFX Application Thread - loaded properties from [ebean.properties]
+2018-05-05 16:50:28,520 [INFO] from org.avaje.datasource.pool.ConnectionPool in JavaFX Application Thread - DataSourcePool [db] autoCommit[false] transIsolation[READ_COMMITTED] min[2] max[200]
+2018-05-05 16:50:33,432 [INFO] from io.ebean.internal.DefaultContainer in JavaFX Application Thread - DatabasePlatform name:db platform:h2
